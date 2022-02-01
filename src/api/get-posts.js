@@ -1,7 +1,7 @@
-var names = ['Lex Fridman', 'Leo Tolstoy', 'Albert Camus', 'Alexandre Dumas', 'Robert Persig', 'Atticus Finch'];
+var names = ['Lex Fridman', 'Leo Tolstoy', 'Albert Camus', 'Alexandre Dumas', 'Robert Persig', 'Atticus Finch']
 
 const getPosts = (number) => {
-    let ret = [];
+    let ret = []
     for (var i = 0; i < number; i++) {
         ret.push({
             author: names[i % names.length],
@@ -12,4 +12,4 @@ const getPosts = (number) => {
     return ret;
 };
 
-export default getPosts;
+export default getPosts
