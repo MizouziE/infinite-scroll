@@ -1,8 +1,8 @@
-#Inifinite Scroll
+# Inifinite Scroll
 
 Initially a small experiment with infinite scroll to develop understanding of functions involved.
 
-##Goals
+## Goals
 
 *Understand server AND client side
 *Work towards a way to interupt
