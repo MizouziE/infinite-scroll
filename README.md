@@ -3,7 +3,7 @@
 Initially a small experiment with infinite scroll to develop understanding of functions involved.
 
 ```
-note - gotta leave this alone for a bit and come back when I understand vue better, the logic is all there, I can't get it in the browser cos I'm not getting the structure. Need to read up a lot on the docs...
+note - got it working to a degree. Currently has redundant CSS styling on list/posts.
 ```
 
 ## Goals

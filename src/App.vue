@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Now find how to render the bastard"/>
+  <ListComponent/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ListComponent from './components/ListComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ListComponent
   }
 }
 </script>

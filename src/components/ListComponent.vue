@@ -9,12 +9,15 @@
 </template>
 
 <script>
-import { getPosts } from '../api/get-posts'
-import { PostComponent } from './PostComponent.vue'
+import getPosts from '../api/get-posts'
+import PostComponent from './PostComponent.vue'
 import { ref, onMounted, onUnmounted } from 'vue'
 
-export default PostComponent({
-    setup() {
+export default {
+    components: {
+        PostComponent
+    },
+    setup () {
         const posts = ref(getPosts(10))
         const scrollComponent = ref(null)
 
@@ -31,7 +34,7 @@ export default PostComponent({
             window.addEventListener("scroll", handleScroll)
         })
 
-        const handleScroll = (e) => {
+        const handleScroll = () => {
             let element = scrollComponent.value
             if ( element.getBoundingClientRect().bottom < window.innerHeight ) {
                 loadMorePosts()
@@ -43,5 +46,5 @@ export default PostComponent({
             scrollComponent
         }
     },
-})
+}
 </script>
